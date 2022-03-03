@@ -4,6 +4,7 @@
 
 Adafruit_MPU6050 mpu;
 
+int limitValue=5;
 
 void setup() {
   Serial.begin(115200);
@@ -51,9 +52,9 @@ void loop() {
 
   else if(y>limitValue){// Food
     
-  }
-  else if(checkDanger()){
+  }else{
     
   }
+
 
 }
