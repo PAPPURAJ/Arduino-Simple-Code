@@ -35,5 +35,25 @@ void loop() {
   Serial.print(",");
   Serial.print(a.acceleration.z);
   Serial.println("");
+  
+    int y=a.acceleration.y;
+  int z=a.acceleration.z;
+      
+  if(z>limitValue){  
+    
+  }
+      else if(z<limitValue*-1){  
+        
+      }
+  else if(y<limitValue*-1){ //Medicine
+    
+  }
+
+  else if(y>limitValue){// Food
+    
+  }
+  else if(checkDanger()){
+    
+  }
 
 }
