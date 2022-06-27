@@ -17,16 +17,14 @@ void loop()
 {
   
  display("Hi","Hello");// Type your text
-  delay(2000);
+  delay(20);
 
 
 }
 
-
 void display(String a, String b){
-  lcd.clear();
   lcd.setCursor(0,0);
-  lcd.print(a);
+  lcd.print(a+"                ");
   lcd.setCursor(0,1);
-  lcd.print(b);
+  lcd.print(b+"                ");
 }
